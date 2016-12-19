@@ -1,5 +1,5 @@
 {
-  "name": "vue-router-history",
+  "name": "vue-router-data",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://lzxb@github.com/lzxb/vue-router-history.git"
+    "url": "git+https://lzxb@github.com/lzxb/vue-router-data.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lzxb/vue-router-history/issues"
+    "url": "https://github.com/lzxb/vue-router-data/issues"
   },
-  "homepage": "https://github.com/lzxb/vue-router-history#readme",
+  "homepage": "https://github.com/lzxb/vue-router-data#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "rollup": "^0.37.0",
+    "rollup-plugin-buble": "^0.15.0"
   }
 }
