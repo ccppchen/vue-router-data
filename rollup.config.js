@@ -4,7 +4,9 @@ const babel = require('rollup-plugin-babel')
 
 rollup({
     entry: 'src/index.js',
-    plugins: [babel()]
+    plugins: [
+        babel()
+    ]
 }).then((function (bundle) {
     bundle.write({
         format: 'cjs',
