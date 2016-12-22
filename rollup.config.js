@@ -1,5 +1,5 @@
 const rollup = require('rollup')
-const babel = require('rollup-plugin-buble')
+const babel = require('rollup-plugin-babel')
 
 rollup.rollup({
     entry: 'src/index.js',
