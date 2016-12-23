@@ -13,8 +13,9 @@ export default class VueRouterData {
     componentInitData(component) {
         var { $route } = component
         var mode = this.options.mode
+        if (typeof component.$options !== 'object') return {}
         var modeData = component.$options[mode]
-        if (typeof modeData !== 'function') return {}
+        if (typeof modeData !== 'function' || typeof component.$options._scopeId !== 'string') return {}
         const { _scopeId } = component.$options
         var key = _scopeId + '-' + this.options.getKey($route)
         var history = this.store[key]
